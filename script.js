@@ -6,9 +6,28 @@ function createGrid(sizeOfGrid){
             let gridDiv = document.createElement('div')
             gridDiv.classList.add('grid')
             gridContainer.append(gridDiv)
+            gridDiv.addEventListener('mouseover', () => {
+                gridDiv.setAttribute('style', 'background-color: black;')
+            })
         };
     };
+
+
+
+
 }
+createGrid(16);
+
+let resetButton = document.querySelector('.resetButton')
 
 
-createGrid(16)
+resetButton.addEventListener('click', () => {
+    document.querySelector('.grid').remove();
+})
+
+
+const cells = document.querySelectorAll('.grid');
+
+console.log(cells.length)
+
+
