@@ -1,0 +1,19 @@
+.gridContainer {
+   position: relative;
+   top: 30px;
+   /* border: 2px solid black; */
+   font-size: 0;
+   margin: auto;
+   height: 960px;
+   width: 960px;
+   padding: 0;
+   
+}
+
+.grid{
+    
+    border: 1px solid black;
+    display: inline-block;
+    height: 55px;
+    width: 55px;
+}
